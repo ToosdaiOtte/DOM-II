@@ -12,6 +12,7 @@ bttn.forEach((index) => {
     index.addEventListener('mouseout', (event) => {
         event.target.style.fontSize = "";
     });
+    
 });
 
 // 3. Rounded Imgs when DoubleClicked
@@ -33,11 +34,10 @@ body.addEventListener('keydown', () => {
 
 const colorChange = document.querySelectorAll('.destination');
 
-// stopPropagation()
-    event.stopPropagation();
+
 
 colorChange[0].addEventListener('click', (event) => {
-		event.target.setAttribute('style', 'color: yellow');
+        event.target.setAttribute('style', 'color: yellow');  
     });
 
 colorChange[1].addEventListener('click', (event) => {
@@ -48,6 +48,9 @@ colorChange[2].addEventListener('click', (event) => {
     event.target.setAttribute('style', 'color: #17A2B8');
     
 });
+
+// stopPropagation()
+
 
 // 6. Alert box when Scrolled to bottom
 window.addEventListener('scroll', () => {
