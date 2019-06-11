@@ -98,5 +98,13 @@ nav.addEventListener('click', (event) => {
 	event.preventDefault();
 });
 
+// Stretch: Logo Bounce using GSAP
+const logo = document.querySelector('.logo-heading');
+logo.addEventListener('click', () => {
+    var duration = 1;
+    TweenMax.to(logo, duration / 4, {y:-20, ease:Power2.easeOut});
+    TweenMax.to(logo, duration / 2, {y:0, ease:Bounce.easeOut, delay:duration / 4});
+})
+
 
 
